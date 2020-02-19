@@ -33,7 +33,7 @@ class Solution {
             @Override
             public int compare(ListNode a, ListNode b)
             {
-                return a.val - b.val; //牛逼啊！重写判断值正负，返回boolean
+                return a.val - b.val; 
             }
         }
         public ListNode mergeKLists(ListNode[] lists)

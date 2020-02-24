@@ -2,6 +2,16 @@
 要求两个数组联合起来后的中位数有很多种cases，所以不如转换为找第k小的数；
 https://www.bilibili.com/video/av70096585?from=search&seid=13497371785587410675
 
+找 第k 小的数:
+if数组总个数为奇数： return findKthSmallest（length/2 +1）例如，3/2 + 1 = 2,所以能找到3个数中第2小的数
+if为偶数： return （findKthSmallest（length/2）+ findKthSmallest（length/2 +1））/ 2
+    
+然后使用二分法，找start， end， mid值
+if两个array中小于等于mid的个数小于k个，那么答案是在mid和end之间
+if两个array中小于等于mid的个数大于k个，那么答案是在start和mid之间
+
+            int mid = start + (end - start) / 2;注意此种写法来找mid，要加上start，联想偏置值； 
+
 
 //There are two sorted arrays nums1 and nums2 of size m and n respectively. 
 //

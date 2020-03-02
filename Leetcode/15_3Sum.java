@@ -1,3 +1,6 @@
+这道题，进行去重的步骤很关键！！！！设置两个函数来进行判断
+
+
 //Given an array nums of n integers, are there elements a, b, c in nums such tha
 //t a + b + c = 0? Find all unique triplets in the array which gives the sum of ze
 //ro. 

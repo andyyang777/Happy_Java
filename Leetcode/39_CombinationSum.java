@@ -57,7 +57,7 @@ class Solution {
                 } else {
                     currSeq.add(candidates[i]);
                     combinationSumHelper(candidates, target - candidates[i], i, res, currSeq);
-                    currSeq.remove(currSeq.size() - 1);
+                    currSeq.remove(currSeq.size() - 1); // 这个写法是因为对于list<integer>来说，相当于是长度，相当于是length
                 }
             }
         }
